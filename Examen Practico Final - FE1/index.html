@@ -9,20 +9,23 @@
 </head>
 <body>
     <header>
-        <div><img src="./imagenes/logo.svg" alt="logo manage"></div>
-
-        <nav>
-            <ul>
-                <li href="#">Pricing</li>
-                <li>Product</li>
-                <li>About us</li>
-                <li>Careers</li>
-                <li>Community</li>
+        <nav class="menu">        
+            <img src="./imagenes/logo.svg" alt="logo manage">
+            <ul class="menu-nav">
+                <li><a href="#" class="active">Pricing</a></li>
+                <li><a href="#" class="active">Product</a></li>
+                <li><a href="#" class="active">About Us</a></li>
+                <li><a href="#" class="active">Careers</a></li>
+                <li><a href="#" class="active">Community</a></li>
             </ul>
-        </nav>
-            <button class="button">Get Started</button>
+         <button class="navbtn">Get Started</button>
+        <input type='checkbox' id='check'>
+        <label for="check">
+          <i class="fas fa-bars checkbtn"></i>
+        </label>
+      </nav>      
     </header>
-
+    <main>
     <section class="contenedor1">
         <div class="columna1">
             <h1>Bring everyone together to build better products.</h1>
@@ -46,7 +49,7 @@
 
         <div class="columna3">
             <div class="prueba">
-                <button>01</button>
+                <button> 01</button>
                 <h4>Track company-wide progress</h4>
                 <p>See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.</p>
              </div>  
@@ -87,10 +90,12 @@
         </div>
     </section>
 
+
+
     <div class="botonDif">
         <button class="button">Get Started</button>
     </div>
-
+</main>
 
     <section class="pre-footer">
         <h2>Simplify your team words today</h2>
@@ -98,6 +103,9 @@
     </section>
 
     <footer class="footer">
+
+        <p class='copy-movile'>Copyright 2020. All Rights Reserved</p>
+
         <div class="iconos">             
             <img src="./imagenes/logo.svg" alt="logoInvertido">
             <div>
@@ -110,22 +118,19 @@
         </div>
         
         <div class="navegacion">
-                <ul>
-                    <li>Home</li>
-                    <li>Pricing</li>
-                    <li>Products</li>
-                    <li>About Us</li>
-                </ul>
-        </div>
-         
-        <div class="navegacion">
-                <ul>
-                    <li>Careers</li>
-                    <li>Community</li>
-                    <li>Privacy Policy</li>
-                </ul>
-        </div>
-
+            <ul>
+              <li><a href="#" class="fondo">Home</a></li>
+              <li><a href="#" class="fondo">Pricing</a></li>
+              <li><a href="#" class="fondo">Products</a></li>
+              <li><a href="#" class="fondo">About Us</a></li>
+            </ul>
+            <ul>
+              <li><a href="#" class="fondo">Careers</a></li>
+              <li><a href="#" class="fondo">Community</a></li>
+              <li><a href="#" class="fondo">Privacy Policy</a></li>
+            </ul>
+          </div>
+          
         <div class="formFooter">
             <form action="x" method="POST"></form>
             <label for="email">

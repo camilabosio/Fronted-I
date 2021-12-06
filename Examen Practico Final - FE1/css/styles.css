@@ -3,7 +3,24 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;     
+    font-size: 16px;
+    list-style: none;
+    text-decoration: none;
  }
+ body {
+    width: 100%;
+    background: url(../imagenes/fondo.svg);
+    background-repeat: no-repeat;
+    background-position: right -20% top -10%;
+    padding-top: 80px;
+    font-family: "Be Vietnam Pro", sans-serif;
+  }
+  main {
+    width: 100%;
+    background: url(../imagenes/fondo.svg);
+    background-repeat: no-repeat;
+    background-position: left -70% bottom 30%;
+  }
  header {
      display: flex;
      justify-content: space-around;
@@ -11,31 +28,77 @@
      padding: 50px;
      padding-left: 70px;
  }
- nav { 
-     width: 30%;
- }
- nav ul {
-     list-style: none;
-     display: flex;
-     justify-content: space-between;
-     color: #242E52;
- }
-.button {
-        background-color: #F3603B;
-        color: white;
-        font-size: 13px;
-        width: 133px;
-        height: 44px;
-        border-radius: 50px;
-        border: solid F3603B;
-        box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
-}
+ 
+ .menu {
+    background-color: #ffffffbd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+  }
+  .menu img {
+    width: 200px;
+    height: auto;
+    padding-left: 80px;
+  }
+  .menu-nav {
+    font-size: 13px;
+    font-weight: 500;
+    color: #242e52;
+    display: flex;
+  }
+  .menu-nav li {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+  .active {
+    padding: 5px;
+    border-radius: 40px;
+  }
+  .active:hover {
+    /*agrego pseudo-clase*/
+    background-color: #f5ae9ce1;
+    transition: 0.5s;
+  }
+  .menu-nav a {
+    color: #242e52;
+  }
+  button {
+    width: 134px;
+    height: 44px;
+    color: #ffffff;
+    font-size: 13px;
+    background-color: #f3603b;
+    border-radius: 50px;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+  }
+  button:hover {
+    background-color: #ffffff;
+    border-radius: 50px;
+    box-shadow: 0px 0px 8px #f3603b9a;
+    color: #000000;
+    transition: 0.5s;
+  }
+  
+  /*bar icono para movile*/
+  .checkbtn {
+    font-size: 20px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check {
+    display: none;
+  }
 h1 {
     font-size: 58px;
     font-weight: bold;
     line-height: 66,47px;
     color: #232C50;
+    padding-bottom: 28px;
+
  }
+
 
 .contenedor1 {
     width: 100%;
@@ -108,7 +171,31 @@ h1 {
     border: solid #F3603B;
     border-radius: 50px;
     width: 80px;
-    height: 44px;
+    padding-top: 15px;
+    padding-bottom: 15px
+}
+h4 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.015em;
+    color: #323851;
+}
+.columna3 p {
+font-style: normal;
+font-weight: 500;
+font-size: 16.2984px;
+line-height: 26px;
+display: flex;
+align-items: center;
+letter-spacing: -0.01em;
+color: #B3B2B7;
+
 }
 .said {
 font-style: normal;
@@ -127,7 +214,26 @@ color: #242E53;
     justify-content: space-around;
     align-items: center;
 }
+.tarjetas h3 {
+font-style: normal;
+font-weight: bold;
+font-size: 16.0714px;
+line-height: 156.6%;
+letter-spacing: -0.01em;
+color: #242E53;
 
+}
+.tarjetas p {
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 156.6%;
+display: flex;
+align-items: center;
+text-align: center;
+color: #B9B9C1;
+
+}
 .personas {
     background-color: #FAFAFA;
     text-align: center;
@@ -138,10 +244,17 @@ color: #242E53;
     justify-content: center;
     padding: 40px;
 }
+.circle {
+    display: none;
+  }
 .pre-footer {
     width: 100%;
+    background: url(../imagenes/bg-simplify-section-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: right;
     background-color: #F3613C;
     padding: 90px;
+    margin-top: 140px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -169,6 +282,14 @@ color: #242E53;
     border: solid F3603B;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
 }
+.button2:hover {
+    color: #ffffff;
+  
+    background-color: #fda58f;
+    border-radius: 50px;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    transition: 0.5s;
+  }
 
 .footer {    
     width: 100%;
@@ -179,6 +300,17 @@ color: #242E53;
     align-content: space-between;
     padding: 50px;
 }
+.copy-movile {
+    display: none;
+  }
+.fondo {
+    color: #ffffff;
+  }
+.fondo:hover {
+    /*agrego pseudo-clase*/
+    color: #f3603b;
+    transition: 0.5s;
+  }
 .iconos {
     display: flex;
     flex-direction:column;
@@ -188,17 +320,16 @@ color: #242E53;
     display: flex;
     justify-content: space-between;
 }
+/*footer nav*/
 .navegacion {
+    width: 400px;
     display: flex;
-    flex-direction: column;
-    align-content: space-between;
-}
-.navegacion ul {
-    list-style: none;
-}
-.navegacion li {
-    margin: 10px;
-}
+    justify-content: space-between;
+  }
+  .navegacion li {
+    padding: 6px;
+  }
+
 .formFooter {
     display: flex;
     flex-direction: column;
@@ -226,4 +357,81 @@ color: #242E53;
     color: #8C8C94;
     font-size: 12px;
     font-weight: 500;
+}
+
+@media (max-width:370) {
+   
+  body {
+    background-position: right 110% top -10%;
+    padding-top: 70px;
+  }
+  main {
+    background-position: left -600% bottom 60%;
+    background-size: 400px;
+  }
+  .menu img {
+    width: 150px;
+    height: auto;
+    padding-left: 30px;
+  }
+  .contenedor1 img {
+    width: 100%;
+  }
+  h1 {
+    font-size: 40px;
+    line-height: 40px;
+    padding-top: 50px;
+  }
+  .columna1{
+    width: 100%;
+  }
+  .columna1 p {
+    width: 100%;
+    padding: 28px 10px;
+  }
+  .colunma2 h2 {
+    font-size: 30px;
+  }
+  .columna3 {
+    width: 100%;
+  }
+  .said h2 {
+    font-size: 30px;
+    padding-top: 50px;
+  }
+ 
+  .pre-footer {
+    flex-direction: column;
+    height: auto;
+    padding: 50px 20px;
+    margin-top: 70px;
+  }
+  .pre-footer h2 {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .footer {
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 50px 20px;
+  }
+  .footer-iconos{
+    padding-left: 0px;
+  }
+  .footer img {
+    padding-bottom: 30px;
+    padding-left: 0px;
+  }
+  .copy-movile {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    color: #8c8c94;
+    padding-top: 50px;
+  }
+  .formFooter p {
+    display: none;
+  }
 }
